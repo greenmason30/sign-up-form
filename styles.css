@@ -1,0 +1,202 @@
+/* CONSTANTS */
+
+:root {
+    --banner-content-size: 5rem;
+    --header-width: 40vw;
+    --color-account: #596D48;
+    --color-input-border: #b5b6b9;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+/* CSS RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: .04em;
+    line-height: 21px;
+}
+
+button {
+    border-style: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+input {
+    outline: none;
+    border-style: none;
+    border-color: white;
+    letter-spacing: 0;
+}
+
+/* SIGN UP CSS */
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(249, 250, 251);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/bg-image.jpg);
+    background-size: cover;
+    color: white;
+    min-width: fit-content;
+    width: var(--header-width);
+}
+
+header > p {
+    color: white;
+    font-weight: normal;
+    padding: 0.8rem;
+}
+
+header a {
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+    gap: 10px;
+    min-width: fit-content;
+    width: var(--header-width);
+    font-family: norse-bold;
+    font-size: var(--banner-content-size);
+    height: calc(var(--banner-content-size) + 50px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner img {
+    max-height: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-text {
+    margin-top: 12vh;
+}
+
+.user-info, .hero-text, .account {
+    padding: 2rem;
+}
+
+.user-info {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-info, .name, .contact-info, .password {
+    display: flex;
+}
+
+.user-info {
+    flex-direction: column;
+    align-items: start;
+}
+
+input {
+    width: 250px;
+    border: 1px solid var(--color-input-border);
+    border-radius: 2px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    letter-spacing: .1em;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+
+}
+
+.user-info > div > :first-child {
+    padding-right: 3rem;
+}
+
+.user-info div div {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.user-info label {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+button[type="submit"] {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    background-color: var(--color-account);
+    margin-bottom: 2rem;
+}
+
+button[type="submit"]:hover {
+    filter: brightness(85%);
+}
+
+button[type="submit"]:active {
+    filter: brightness(70%);
+}
+
+.login {
+    display: flex;
+}
+
+.login p {
+    padding-right: 0.5rem;
+    font-weight: normal;
+}
+
+.login a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-account);
+}
+
+.login a:hover {
+    filter: brightness(85%);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/odin-lined.png" alt="Odin Logo">
+            <p>ODIN</p>
+        </div>
+        <p>Photo by <a target="_blank" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Hailie West</a> on Unsplash</p>
+    </header>
+    <div class="content">
+        <div class="hero-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <i>now</i> to get started.</p>
+            <br>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+        <form action="#" method="get">
+            <div class="user-info">
+                <h2>Let's do this!</h2>
+                <div class="name">
+                    <div class="label-value">
+                        <label for="first-name">FIRST NAME</p>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="label-value">
+                        <label for="last-name">LAST NAME</p>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="label-value">
+                        <label for="user-email">EMAIL</p>
+                        <input type="email" id="user-email">
+                    </div>
+                    <div class="label-value">
+                        <label for="phone">PHONE NUMBER</p>
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890">
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="label-value">
+                        <label for="pass">PASSWORD</p>
+                        <input type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}" title="Must contain at least one number and one uppercase and lowercase letter, and 8 - 15 characters" required>
+                    </div>
+                    <div class="label-value">
+                        <label for="confirm-pass">CONFIRM PASSWORD</p>
+                        <input type="password" id="confirm-pass" required>
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <button type="submit">Create Account</button>
+                <div class="login">
+                    <p>Already have an account?</p>
+                    <a href="">Log in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
